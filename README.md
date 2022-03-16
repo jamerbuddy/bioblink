@@ -1,6 +1,6 @@
 
-Prerequisites:
-
+# BioBlink
+## Prerequisites
 - [Python](https://www.python.org/downloads/)
 - [MySQL](https://dev.mysql.com/downloads/installer/)
 
@@ -36,7 +36,7 @@ Endpoints should now available with `localhost:5000`
 ## Database queries
 These queries can be test run on `MySQL Workbench` or `MySQL Command Line Client`
 
-Initial seed
+#### Initial seed
 ```
 CREATE DATABASE bioblink;
 
@@ -58,7 +58,7 @@ INSERT INTO blinks (rising_time, falling_time) VALUES
 
 ```
 
-Average duration
+####Average duration
 ```
 SELECT AVG(falling_time - rising_time) as avg_duration FROM blinks;
 ```
