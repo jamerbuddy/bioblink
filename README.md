@@ -58,7 +58,7 @@ INSERT INTO blinks (rising_time, falling_time) VALUES
 
 ```
 
-####Average duration
+#### Average duration
 ```
 SELECT AVG(falling_time - rising_time) as avg_duration FROM blinks;
 ```
